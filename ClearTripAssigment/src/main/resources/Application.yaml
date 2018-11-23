@@ -1,0 +1,5 @@
+ClearTrip:
+  URL : https://www.cleartrip.com/
+  browserName : Chrome
+  FileName : testData.xlsx
+  SheetName : FlightDetails
