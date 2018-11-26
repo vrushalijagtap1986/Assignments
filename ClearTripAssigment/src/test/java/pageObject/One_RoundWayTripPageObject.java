@@ -131,6 +131,7 @@ public class One_RoundWayTripPageObject {
             switch (str)
             {
                 case "MoreOptionsLink":
+                    actionClass.waitForUIElementToBeClickable(MoreOptionsLink);
                     actionClass.click(MoreOptionsLink);
                     break;
 

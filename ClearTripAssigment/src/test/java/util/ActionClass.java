@@ -101,6 +101,11 @@ public class ActionClass extends ApplicationDriver {
         wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
     }
 
+    public void waitForUIElementToBeClickable(By UIElement) {
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.elementToBeClickable(UIElement));
+    }
+
     private WebElement findBy(By locator) {
         try {
             return driver.findElement(locator);
