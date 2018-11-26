@@ -3,7 +3,7 @@ Feature: Search Flights
   @OneWayFlightSearch
   Scenario: To Search one-way flight
     Given I Launch the ClearTrip application
-    And I click "OneWayRadioButton"
+#    And I click "OneWayRadioButton"
     And I enter "From" Location
     And I enter "To" Location
     And I enter "DepartOn" Date for OneWayTrip
