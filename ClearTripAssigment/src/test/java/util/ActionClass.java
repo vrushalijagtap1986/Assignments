@@ -80,7 +80,8 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("enterText method Started");
-            waitForUIElementToBeDisplayed(UIElement);
+//            waitForUIElementToBeDisplayed(UIElement);
+            waitForPageLoad();
             moveToElementAndClick(UIElement);
             findBy(UIElement).clear();
             findBy(UIElement).sendKeys(str);
@@ -106,19 +107,37 @@ public class ActionClass extends ApplicationDriver {
         }
     }
 
-    private void waitForDropdownItems(By UIElement) {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
+    private void waitForDropdownItems(By UIElement) throws Exception{
+       try {
+           WebDriverWait wait = new WebDriverWait(driver, 15);
+           wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
+       }
+       catch (Exception e)
+       {
+           logger.error("Failed to waitForDropdownItems :"+e.getMessage(), e);
+       }
     }
 
-    public void waitForUIElementToBeClickable(By UIElement) {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.elementToBeClickable(UIElement));
+    public void waitForUIElementToBeClickable(By UIElement) throws Exception {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 15);
+            wait.until(ExpectedConditions.elementToBeClickable(UIElement));
+        }
+        catch (Exception e)
+        {
+            logger.error("Failed to waitForUIElementToBeClickable :"+e.getMessage(), e);
+        }
     }
 
-    public void waitForUIElementToBeDisplayed(By UIElement) {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
+    public void waitForUIElementToBeDisplayed(By UIElement) throws Exception {
+       try {
+           WebDriverWait wait = new WebDriverWait(driver, 15);
+           wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
+       }
+       catch (Exception e)
+       {
+           logger.error("Failed to waitForUIElementToBeDisplayed :"+e.getMessage(), e);
+       }
 
     }
     public void waitForPageLoad() {

@@ -38,6 +38,7 @@ public class CommonPageObject {
                     actionClass.clickRadioButton(RoundTripRadioButton);
                     break;
                 case "SearchFlightsButton":
+                   actionClass.waitForPageLoad();
                     actionClass.waitForUIElementToBeDisplayed(SearchFlightsButton);
                     actionClass.click(SearchFlightsButton);
                     break;
