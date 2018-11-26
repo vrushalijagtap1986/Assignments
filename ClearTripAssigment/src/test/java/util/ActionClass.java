@@ -25,7 +25,7 @@ public class ActionClass extends ApplicationDriver {
 
     }
 
-    public void click(By UIElement) throws Exception
+    public void clickRadioButton(By UIElement) throws Exception
     {
         try {
             logger.debug("click method Started");
@@ -33,6 +33,19 @@ public class ActionClass extends ApplicationDriver {
               System.out.println("Already clicked");
            else
                findBy(UIElement).click();
+            logger.debug("click method Completed");
+        }
+        catch (Exception e)
+        {
+            logger.error("Failed to click :"+e.getMessage(),e);
+        }
+    }
+    public void click(By UIElement) throws Exception
+    {
+        try {
+            logger.debug("click method Started");
+            waitForUIElementToBeDisplayed(UIElement);
+            findBy(UIElement).click();
             logger.debug("click method Completed");
         }
         catch (Exception e)

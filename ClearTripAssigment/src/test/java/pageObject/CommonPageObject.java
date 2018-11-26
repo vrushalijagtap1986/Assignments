@@ -32,10 +32,10 @@ public class CommonPageObject {
             switch (str)
             {
                 case "OneWayRadioButton":
-                    actionClass.click(OneWayTripRadioButton);
+                    actionClass.clickRadioButton(OneWayTripRadioButton);
                     break;
                 case "RoundTripRadioButton":
-                    actionClass.click(RoundTripRadioButton);
+                    actionClass.clickRadioButton(RoundTripRadioButton);
                     break;
                 case "SearchFlightsButton":
                     actionClass.waitForUIElementToBeDisplayed(SearchFlightsButton);
