@@ -59,11 +59,11 @@
         <scope>provided</scope>
     </dependency>
 
-    <dependency>
-        <groupId>info.cukes</groupId>
-        <artifactId>cucumber-jvm</artifactId>
-        <version>1.2.5</version>
-    </dependency>
+    <!--<dependency>-->
+        <!--<groupId>info.cukes</groupId>-->
+        <!--<artifactId>cucumber-jvm</artifactId>-->
+        <!--<version>1.2.5</version>-->
+    <!--</dependency>-->
     <dependency>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-clean-plugin</artifactId>
