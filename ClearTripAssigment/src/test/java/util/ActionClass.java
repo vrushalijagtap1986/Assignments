@@ -1,18 +1,14 @@
 package util;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 import testConfiguration.ApplicationDetails;
 import testConfiguration.ApplicationDriver;
 
 import java.util.List;
+import java.util.function.Function;
 
 
 public class ActionClass extends ApplicationDriver {
@@ -84,7 +80,8 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("enterText method Started");
-//            moveToElementAndClick(UIElement);
+            waitForUIElementToBeDisplayed(UIElement);
+            moveToElementAndClick(UIElement);
             findBy(UIElement).clear();
             findBy(UIElement).sendKeys(str);
             logger.debug("enterText method Completed");
@@ -122,6 +119,19 @@ public class ActionClass extends ApplicationDriver {
     public void waitForUIElementToBeDisplayed(By UIElement) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
+
+    }
+    public void waitForPageLoad() {
+        Wait<WebDriver> wait = new WebDriverWait(driver, 30);
+        wait.until(new Function<WebDriver, Boolean>() {
+            public Boolean apply(WebDriver driver) {
+                System.out.println("Current Window State       : "
+                        + String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState")));
+                return String
+                        .valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
+                        .equals("complete");
+            }
+        });
 
     }
 

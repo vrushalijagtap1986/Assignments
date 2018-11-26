@@ -75,13 +75,14 @@ public class One_RoundWayTripPageObject {
                 case "Infants":
                     actionClass.moveToElementAndClick(InfantDropDown);
                     actionClass.selectByVisibleText(InfantDropDown,Infants);
+                    actionClass.waitForPageLoad();
                     break;
                 case "ClassOfTravel":
                     actionClass.moveToElementAndClick(ClassOfTravelDropDown);
                     actionClass.selectByVisibleText(ClassOfTravelDropDown,ClassOfTravel);
                     break;
                 case "PreferredAirline":
-                    actionClass.moveToElementAndClick(PreferredAirlineDropDown);
+//                    actionClass.moveToElementAndClick(PreferredAirlineDropDown);
                     actionClass.enterText(PreferredAirlineDropDown,Airline);
                     break;
 
@@ -95,6 +96,7 @@ public class One_RoundWayTripPageObject {
     {
         try {
             logger.debug("enterOneWayTripDate started");
+                    actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.click(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(2).click();
         }
@@ -110,10 +112,12 @@ public class One_RoundWayTripPageObject {
             logger.debug("enterRoundTripDate started");
             switch ( dateType ) {
                 case "DepartOn":
+                    actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.click(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(2).click();
                     break;
                 case "ReturnOn":
+                    actionClass.waitForUIElementToBeClickable(ReturnOnTextBox_OneWay_RoundTrip);
                     actionClass.click(ReturnOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(3).click();
                     break;
