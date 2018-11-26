@@ -25,9 +25,9 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("click method Started");
-           if(findBy(UIElement).isSelected())
+//           if(findBy(UIElement).isSelected())
               System.out.println("Already clicked");
-           else
+//           else
                findBy(UIElement).click();
             logger.debug("click method Completed");
         }
