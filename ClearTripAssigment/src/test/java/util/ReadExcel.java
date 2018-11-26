@@ -38,7 +38,7 @@ public class ReadExcel {
 
     public void readExcelFile() throws Exception {
         String FileExtension;
-        Workbook workbook=null;
+        XSSFWorkbook workbook=null;
         Sheet worksheet;
         try {
 //            File fs = new File(Filepath + "\\"+shName);
@@ -48,8 +48,8 @@ public class ReadExcel {
             if (FileExtension.equals(".xlsx")) {
                 workbook = new XSSFWorkbook(fis);
             }
-            else if (FileExtension.equals(".xls"))
-                workbook = new HSSFWorkbook(fis);
+//            else if (FileExtension.equals(".xls"))
+//                workbook = new HSSFWorkbook(fis);
 
 //            worksheet= workbook.getSheet("FlightDetails");
             worksheet= workbook.getSheet(shName);
