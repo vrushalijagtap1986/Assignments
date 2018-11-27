@@ -79,7 +79,7 @@ public class ActionClass extends ApplicationDriver {
             logger.debug("enterText method Started");
 //            waitForUIElementToBeDisplayed(UIElement);
 //            waitForPageLoad();
-            moveToElementAndClick(UIElement);
+//            moveToElementAndClick(UIElement);
             findBy(UIElement).clear();
             findBy(UIElement).sendKeys(str);
             logger.debug("enterText method Completed");

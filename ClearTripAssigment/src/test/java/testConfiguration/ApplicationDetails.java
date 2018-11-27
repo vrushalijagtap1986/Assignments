@@ -14,15 +14,6 @@ public class ApplicationDetails {
     File file =new File(FilePath);
     private static final Properties prop =new Properties();
 
-//    private static String getAppName()
-//    {
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter the application name:");
-//        app=scanner.next();
-//        scanner.close();
-//        return app;
-//    }
-
 //    public static Map getConfig() throws Exception
 //    {
 //      //  Map configTest = null;
@@ -46,16 +37,16 @@ public class ApplicationDetails {
 //        return config;
 //    }
 
-//    public static void loadConfiguration() throws Exception
-//        {
-//            try {
-//                config = ApplicationDetails.getConfig();
-//            }
-//            catch (Exception e)
-//            {
-//                e.printStackTrace();
-//            }
-//        }
+/*    public static void loadConfiguration() throws Exception
+        {
+            try {
+                config = ApplicationDetails.getConfig();
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }*/
 public static void readProperties() {
     try {
 

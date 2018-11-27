@@ -68,20 +68,20 @@ public class One_RoundWayTripPageObject {
                     actionClass.click(ToDropDown);
                     break;
                 case "Adults":
-                    actionClass.moveToElementAndClick(AdultDropDown);
+//                    actionClass.moveToElementAndClick(AdultDropDown);
                     actionClass.selectByVisibleText(AdultDropDown,Adults);
                     break;
                 case "Children":
-                    actionClass.moveToElementAndClick(ChildernDropDown);
+//                    actionClass.moveToElementAndClick(ChildernDropDown);
                     actionClass.selectByVisibleText(ChildernDropDown,Children);
                     break;
                 case "Infants":
-                    actionClass.moveToElementAndClick(InfantDropDown);
+//                    actionClass.moveToElementAndClick(InfantDropDown);
                     actionClass.selectByVisibleText(InfantDropDown,Infants);
 //                    actionClass.waitForPageLoad();
                     break;
                 case "ClassOfTravel":
-                    actionClass.moveToElementAndClick(ClassOfTravelDropDown);
+//                    actionClass.moveToElementAndClick(ClassOfTravelDropDown);
                     actionClass.selectByVisibleText(ClassOfTravelDropDown,ClassOfTravel);
                     break;
                 case "PreferredAirline":
