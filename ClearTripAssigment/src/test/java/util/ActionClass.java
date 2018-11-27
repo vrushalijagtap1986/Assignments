@@ -68,7 +68,7 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("moveToElementAndClick method Started");
-            Actions action = new Actions(driver);
+            Actions action = new Actions(getDriver());
             action.moveToElement(findBy(UIElement)).click();
             logger.debug("moveToElementAndClick method Completed");
         }
@@ -156,7 +156,7 @@ public class ActionClass extends ApplicationDriver {
 
     private WebElement findBy(By locator) {
         try {
-            return driver.findElement(locator);
+            return getDriver().findElement(locator);
         } catch (NoSuchElementException ex) {
             throw new NoSuchElementException(ex.getMessage());
 //            ex.getMessage();
@@ -164,7 +164,7 @@ public class ActionClass extends ApplicationDriver {
     }
     public List<WebElement> findsBy(By locator) {
         try {
-            return driver.findElements(locator);
+            return getDriver().findElements(locator);
         } catch (NoSuchElementException ex) {
             throw new NoSuchElementException(ex.getMessage());
       }

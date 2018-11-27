@@ -50,6 +50,10 @@ public class ApplicationDriver {
         return driver;
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     public static void closeDriver()
     {
         driver.close();
