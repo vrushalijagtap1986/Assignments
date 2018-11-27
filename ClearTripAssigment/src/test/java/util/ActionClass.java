@@ -82,8 +82,8 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("enterText method Started");
-//            waitForUIElementToBeDisplayed(UIElement);
-            waitForPageLoad();
+            waitForUIElementToBeDisplayed(UIElement);
+//            waitForPageLoad();
             moveToElementAndClick(UIElement);
             findBy(UIElement).clear();
             findBy(UIElement).sendKeys(str);

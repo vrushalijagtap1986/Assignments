@@ -33,16 +33,16 @@ public class CommonPageObject {
             {
                 case "OneWayRadioButton":
                     System.out.println("OneWayRadioButton click");
-                    actionClass.waitForPageLoad();
+//                    actionClass.waitForPageLoad();
                     actionClass.clickRadioButton(OneWayTripRadioButton);
                     break;
                 case "RoundTripRadioButton":
                     System.out.println("RoundTripRadioButton click");
-                    actionClass.waitForPageLoad();
+//                    actionClass.waitForPageLoad();
                     actionClass.clickRadioButton(RoundTripRadioButton);
                     break;
                 case "SearchFlightsButton":
-                   actionClass.waitForPageLoad();
+//                   actionClass.waitForPageLoad();
                     actionClass.waitForUIElementToBeDisplayed(SearchFlightsButton);
                     actionClass.click(SearchFlightsButton);
                     break;

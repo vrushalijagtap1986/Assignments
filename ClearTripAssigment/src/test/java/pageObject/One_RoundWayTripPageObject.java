@@ -57,7 +57,7 @@ public class One_RoundWayTripPageObject {
         try {
             switch ( location ) {
                 case "From":
-                    actionClass.enterText(FromTextBox_OneWay_RoundTrip, FromCity);
+                    actionClass.enterText(FromTextBox_OneWay_RoundTrip,FromCity);
 //                    actionClass.selectByVisibleText(FromDropDown,FromCity);
 //                    actionClass.click(FromDropDown);
                     break;
@@ -76,7 +76,7 @@ public class One_RoundWayTripPageObject {
                 case "Infants":
                     actionClass.moveToElementAndClick(InfantDropDown);
                     actionClass.selectByVisibleText(InfantDropDown,Infants);
-                    actionClass.waitForPageLoad();
+//                    actionClass.waitForPageLoad();
                     break;
                 case "ClassOfTravel":
                     actionClass.moveToElementAndClick(ClassOfTravelDropDown);
@@ -136,7 +136,7 @@ public class One_RoundWayTripPageObject {
             switch (str)
             {
                 case "MoreOptionsLink":
-                    actionClass.waitForPageLoad();
+//                    actionClass.waitForPageLoad();
                     actionClass.waitForUIElementToBeClickable(MoreOptionsLink);
                     actionClass.click(MoreOptionsLink);
                     break;
