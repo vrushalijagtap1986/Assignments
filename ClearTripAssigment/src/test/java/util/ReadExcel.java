@@ -1,6 +1,5 @@
 package util;
 
-import org.apache.commons.lang3.ObjectUtils;
 import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
@@ -14,6 +13,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Objects;
 
 import static org.apache.poi.ss.usermodel.CellType.*;
 
@@ -46,8 +46,8 @@ public class ReadExcel {
 //                workbook = new HSSFWorkbook(fis);
 
 //            worksheet= workbook.getSheet("FlightDetails");
-            worksheet= workbook.getSheet(shName);
-               int rowCount = worksheet.getLastRowNum()-worksheet.getFirstRowNum();
+            worksheet= Objects.requireNonNull(workbook).getSheet(shName);
+//               int rowCount = worksheet.getLastRowNum()-worksheet.getFirstRowNum();
             Iterator<Row> rowIterator =worksheet.rowIterator();
             ArrayList<String> arrayList = new ArrayList<>();
             while (rowIterator.hasNext()) {
