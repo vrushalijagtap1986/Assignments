@@ -34,10 +34,12 @@ public class ApplicationDriver {
         else if(browswerName.equals("Chrome"))
         {
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--disable-notifications");
-            chromeOptions.addArguments("disable-infobars");
-            chromeOptions.setExperimentalOption("excludeSwitches", "disable-popup-blocking");
+//            ChromeOptions chromeOptions = new ChromeOptions();
+//            chromeOptions.addArguments("--no-sandbox");
+//            chromeOptions.addArguments("--disable-dev-shm-usage");
+//            chromeOptions.addArguments("--disable-notifications");
+//            chromeOptions.addArguments("disable-infobars");
+//            chromeOptions.setExperimentalOption("excludeSwitches", "disable-popup-blocking");
             capabilities.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
             capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
             System.setProperty("webdriver.chrome.driver", browswerpath + "\\chromedriver.exe");
