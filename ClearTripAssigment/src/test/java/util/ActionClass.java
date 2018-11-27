@@ -14,6 +14,8 @@ import java.util.function.Function;
 public class ActionClass extends ApplicationDriver {
 
     private static final Logger logger = Logger.getLogger(ActionClass.class);
+    private static JavascriptExecutor js;
+    static String pageLoadStatus = null;
 
     public static void launchApplication() throws Exception {
         createDriver(ApplicationDetails.getBrowser());
@@ -141,16 +143,13 @@ public class ActionClass extends ApplicationDriver {
 
     }
     public void waitForPageLoad() {
-        Wait<WebDriver> wait = new WebDriverWait(driver, 30);
-        wait.until(new Function<WebDriver, Boolean>() {
-            public Boolean apply(WebDriver driver) {
-                System.out.println("Current Window State       : "
-                        + String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState")));
-                return String
-                        .valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
-                        .equals("complete");
-            }
-        });
+        do {
+            js = (JavascriptExecutor) driver;
+            pageLoadStatus = (String)js.executeScript("return document.readyState");
+            System.out.print(".");
+        } while ( !pageLoadStatus.equals("complete") );
+        System.out.println();
+        System.out.println("Page Loaded.");
 
     }
 

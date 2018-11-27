@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c05e7e-0732-4952-8a59-cdb536519cf8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/CommonPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/CommonPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/util/ActionClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/util/ActionClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -86,13 +88,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="239" />
+          <entry key="java" value="255" />
           <entry key="xml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="239" />
+          <entry key="JAVA" value="255" />
           <entry key="XML" value="36" />
         </counts>
       </usages-collector>
@@ -121,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="41">
+              <caret line="17" selection-start-line="17" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -134,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/One_RoundWayTripStepDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="127">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+              <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,7 +161,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/CommonStepDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,8 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CommonPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+            <state relative-caret-position="166">
+              <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,17 +184,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
+            <state relative-caret-position="148">
+              <caret line="98" column="61" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/ActionClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+            <state relative-caret-position="215">
+              <caret line="133" column="45" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -233,10 +235,10 @@
         <option value="$PROJECT_DIR$/src/test/java/testConfiguration/ApplicationDriver.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/spring/UISpring.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/CommonPageObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/util/ActionClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature" />
       </list>
     </option>
   </component>
@@ -345,11 +347,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testRunner" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ClearTripAssigment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClearTripAssigment" type="462c0819:PsiDirectoryNode" />
-              <item name="testData" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -362,7 +359,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543293363730" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543294128694" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ClearTripAssigment" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -723,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -743,24 +733,17 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/One_RoundWayTripStepDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/CommonStepDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -769,8 +752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CommonPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        <state relative-caret-position="166">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -779,8 +762,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/util/ActionClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        <state relative-caret-position="215">
+          <caret line="133" column="45" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/One_RoundWayTripPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="98" column="61" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/SearchFlights.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="17" selection-start-line="17" selection-end-line="32" />
         </state>
       </provider>
     </entry>

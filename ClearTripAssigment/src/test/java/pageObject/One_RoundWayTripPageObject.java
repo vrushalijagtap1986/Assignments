@@ -112,12 +112,12 @@ public class One_RoundWayTripPageObject {
             logger.debug("enterRoundTripDate started");
             switch ( dateType ) {
                 case "DepartOn":
-                    actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
+                    actionClass.waitForUIElementToBeDisplayed(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.click(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(2).click();
                     break;
                 case "ReturnOn":
-                    actionClass.waitForUIElementToBeClickable(ReturnOnTextBox_OneWay_RoundTrip);
+                    actionClass.waitForUIElementToBeDisplayed(ReturnOnTextBox_OneWay_RoundTrip);
                     actionClass.click(ReturnOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(3).click();
                     break;
@@ -135,6 +135,7 @@ public class One_RoundWayTripPageObject {
             switch (str)
             {
                 case "MoreOptionsLink":
+                    actionClass.waitForPageLoad();
                     actionClass.waitForUIElementToBeClickable(MoreOptionsLink);
                     actionClass.click(MoreOptionsLink);
                     break;
