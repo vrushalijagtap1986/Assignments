@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationDriver {
 
-    public static WebDriver driver;
+    protected static WebDriver driver;
 
     private final static String browswerpath = System.getProperty("user.dir")+"\\browseDrivers";
 
-    public static WebDriver createDriver(String browswerName)
+    protected static void createDriver(String browswerName)
     {
         if (browswerName.equals("IE")) {
             InternetExplorerOptions ieOptions = new InternetExplorerOptions();
@@ -47,7 +47,6 @@ public class ApplicationDriver {
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        return driver;
     }
 
     public WebDriver getDriver() {

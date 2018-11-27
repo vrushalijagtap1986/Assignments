@@ -10,11 +10,11 @@ public class CommonPageObject {
     private static final Logger logger = Logger.getLogger(CommonPageObject.class);
 
     private ActionClass actionClass;
-    private ReadExcel readExcel;
+
     public CommonPageObject()
     {
         actionClass =new ActionClass();
-        readExcel = new ReadExcel();
+        ReadExcel readExcel = new ReadExcel();
     }
 
     private static final By SearchFrame = By.xpath("//form[@id='SearchForm']");
@@ -26,7 +26,7 @@ public class CommonPageObject {
 
     private static final By SearchFlightsButton = By.xpath("//div[@class='searchBtnContainer']/descendant::input[@title='Search flights']");
 
-    public void clickMethod(String str) throws Exception {
+    public void clickMethod(String str) {
         logger.debug("clickMethod started");
         try {
             switch (str)

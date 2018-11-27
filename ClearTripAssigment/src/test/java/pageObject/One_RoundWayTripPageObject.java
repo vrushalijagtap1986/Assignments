@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import util.ActionClass;
 import util.ReadExcel;
 
+@SuppressWarnings("ALL")
 public class One_RoundWayTripPageObject {
 
     private static final Logger logger = Logger.getLogger(One_RoundWayTripPageObject.class);
@@ -37,23 +38,23 @@ public class One_RoundWayTripPageObject {
     private static final By PreferredAirlineDropDown = By.xpath("//input[@id='AirlineAutocomplete']");
 
 
-    public void launchApp() throws Exception {
+    public void launchApp() {
         try {
-            actionClass.launchApplication();
+            ActionClass.launchApplication();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void enterFlightDetails(String location) throws Exception {
+    public void enterFlightDetails(String location) {
         readExcel.readExcelFile();
-        String FromCity = readExcel.FromCity;
-        String ToCity = readExcel.ToCity;
-        String Adults = readExcel.Adults;
-        String Children = readExcel.Children;
-        String Infants = readExcel.Infants;
-        String ClassOfTravel = readExcel.ClassOfTravel;
-        String Airline = readExcel.Airline;
+        String FromCity = ReadExcel.FromCity;
+        String ToCity = ReadExcel.ToCity;
+        String Adults = ReadExcel.Adults;
+        String Children = ReadExcel.Children;
+        String Infants = ReadExcel.Infants;
+        String ClassOfTravel = ReadExcel.ClassOfTravel;
+        String Airline = ReadExcel.Airline;
         try {
             switch ( location ) {
                 case "From":
@@ -95,8 +96,7 @@ public class One_RoundWayTripPageObject {
         }
     }
 
-    public void enterOneWayTripDate() throws Exception
-    {
+    public void enterOneWayTripDate() {
         try {
             logger.debug("enterOneWayTripDate started");
 //                    actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
@@ -109,8 +109,7 @@ public class One_RoundWayTripPageObject {
         }
     }
 
-    public void enterRoundTripDate(String dateType) throws Exception
-    {
+    public void enterRoundTripDate(String dateType) {
         try {
             logger.debug("enterRoundTripDate started");
             switch ( dateType ) {
@@ -132,7 +131,7 @@ public class One_RoundWayTripPageObject {
         }
     }
 
-    public void clickMethod(String str) throws Exception {
+    public void clickMethod(String str) {
         logger.debug("clickMethod started");
         try {
             switch (str)

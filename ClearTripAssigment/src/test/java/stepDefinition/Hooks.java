@@ -9,7 +9,7 @@ import testConfiguration.ApplicationDriver;
 public class Hooks {
 
     @Before
-    public void beforeScenario() throws Exception{
+    public void beforeScenario() {
         System.out.println("This will run before the Scenario");
         ApplicationDetails.readProperties();
     }

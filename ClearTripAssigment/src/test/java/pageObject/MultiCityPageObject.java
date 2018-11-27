@@ -2,7 +2,7 @@ package pageObject;
 
 import org.openqa.selenium.By;
 
-public class MultiCityPageObject {
+class MultiCityPageObject {
     private static final By FromTextBox1_MultiTrip = By.xpath("//input[@id='From1']/preceding-sibling::input");
     private static final By FromTextBox2_MultiTrip = By.xpath("//input[@id='From2']/preceding-sibling::input");
     private static final By FromTextBox3_MultiTrip = By.xpath("//input[@id='From3']/preceding-sibling::input");
