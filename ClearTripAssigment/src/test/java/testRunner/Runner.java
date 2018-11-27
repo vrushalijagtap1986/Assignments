@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/resources/Feature/"
         ,glue={"stepDefinition"}
-        ,tags = "@RoundWayFlightSearch"
+        ,tags = "@OneWayFlightSearch"
 )
 
 public class Runner {
