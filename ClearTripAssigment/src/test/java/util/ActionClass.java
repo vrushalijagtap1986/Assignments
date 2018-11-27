@@ -14,11 +14,14 @@ public class ActionClass extends ApplicationDriver {
 
     private static final Logger logger = Logger.getLogger(ActionClass.class);
 
+
+
     public static void launchApplication() {
         createDriver(ApplicationDetails.getBrowser());
         driver.navigate().to(ApplicationDetails.getApplicationURL());
 
     }
+
 
     public void clickRadioButton(By UIElement) {
         try {

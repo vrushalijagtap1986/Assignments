@@ -22,12 +22,12 @@ public class ReadExcel {
 
     private static final Logger logger = Logger.getLogger(ReadExcel.class);
 
-//    private String browserName,appURL,fileName,SheetName;
+    private String browserName,appURL,fileName,SheetName;
 
-//    public ReadExcel()
-//    {
-////        ApplicationDetails applicationDetails = new ApplicationDetails(browserName, appURL, fileName, SheetName);
-//    }
+    public ReadExcel()
+    {
+        ApplicationDetails applicationDetails = new ApplicationDetails(browserName, appURL, fileName, SheetName);
+    }
 
     private final String Filepath = System.getProperty("user.dir")+"\\testData";
     private final String fName =ApplicationDetails.getFileName();
