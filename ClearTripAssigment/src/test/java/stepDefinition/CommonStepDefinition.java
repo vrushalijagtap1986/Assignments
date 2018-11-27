@@ -1,7 +1,6 @@
 package stepDefinition;
 
 import cucumber.api.java.en.And;
-import org.springframework.beans.factory.annotation.Autowired;
 import pageObject.CommonPageObject;
 
 public class CommonStepDefinition {

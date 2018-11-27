@@ -1,9 +1,7 @@
 package stepDefinition;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
-import org.springframework.beans.factory.annotation.Autowired;
 import pageObject.One_RoundWayTripPageObject;
 
 public class One_RoundWayTripStepDefinition {

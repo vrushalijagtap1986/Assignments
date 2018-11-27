@@ -8,23 +8,19 @@ import testConfiguration.ApplicationDetails;
 import testConfiguration.ApplicationDriver;
 
 import java.util.List;
-import java.util.function.Function;
 
 
 public class ActionClass extends ApplicationDriver {
 
     private static final Logger logger = Logger.getLogger(ActionClass.class);
-    private static JavascriptExecutor js;
-    static String pageLoadStatus = null;
 
-    public static void launchApplication() throws Exception {
+    public static void launchApplication() {
         createDriver(ApplicationDetails.getBrowser());
         driver.navigate().to(ApplicationDetails.getApplicationURL());
 
     }
 
-    public void clickRadioButton(By UIElement) throws Exception
-    {
+    public void clickRadioButton(By UIElement) {
         try {
             logger.debug("clickRadioButton method Started");
 //           if(findBy(UIElement).isSelected())
@@ -38,8 +34,7 @@ public class ActionClass extends ApplicationDriver {
             logger.error("Failed to click :"+e.getMessage(),e);
         }
     }
-    public void click(By UIElement) throws Exception
-    {
+    public void click(By UIElement) {
         try {
             logger.debug("click method Started");
 //            waitForUIElementToBeDisplayed(UIElement);
@@ -51,8 +46,7 @@ public class ActionClass extends ApplicationDriver {
             logger.error("Failed to click :"+e.getMessage(),e);
         }
     }
-    public void switchToFrame(By UIElement) throws Exception
-    {
+    public void switchToFrame(By UIElement) {
         try {
             logger.debug("switchToFrame method Started");
 
@@ -64,8 +58,7 @@ public class ActionClass extends ApplicationDriver {
             logger.error("Failed to switchToFrame :"+e.getMessage(),e);
         }
     }
-    public void moveToElementAndClick(By UIElement) throws Exception
-    {
+    public void moveToElementAndClick(By UIElement) {
         try {
             logger.debug("moveToElementAndClick method Started");
             Actions action = new Actions(getDriver());
@@ -78,8 +71,7 @@ public class ActionClass extends ApplicationDriver {
         }
     }
 
-    public void enterText(By UIElement, String str) throws Exception
-    {
+    public void enterText(By UIElement, String str) {
         try {
             logger.debug("enterText method Started");
 //            waitForUIElementToBeDisplayed(UIElement);
@@ -95,8 +87,7 @@ public class ActionClass extends ApplicationDriver {
         }
     }
 
-    public void selectByVisibleText(By UIElement, String str) throws Exception
-    {
+    public void selectByVisibleText(By UIElement, String str) {
         try
         {
             Select select = new Select(findBy(UIElement));
@@ -109,7 +100,7 @@ public class ActionClass extends ApplicationDriver {
         }
     }
 
-    private void waitForDropdownItems(By UIElement) throws Exception{
+    private void waitForDropdownItems(By UIElement) {
        try {
            WebDriverWait wait = new WebDriverWait(driver, 15);
            wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
@@ -120,7 +111,7 @@ public class ActionClass extends ApplicationDriver {
        }
     }
 
-    public void waitForUIElementToBeClickable(By UIElement) throws Exception {
+    public void waitForUIElementToBeClickable(By UIElement) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, 15);
             wait.until(ExpectedConditions.elementToBeClickable(UIElement));
@@ -131,7 +122,7 @@ public class ActionClass extends ApplicationDriver {
         }
     }
 
-    public void waitForUIElementToBeDisplayed(By UIElement) throws Exception {
+    public void waitForUIElementToBeDisplayed(By UIElement) {
        try {
            WebDriverWait wait = new WebDriverWait(driver, 15);
            wait.until(ExpectedConditions.visibilityOfElementLocated(UIElement));
@@ -143,9 +134,10 @@ public class ActionClass extends ApplicationDriver {
 
     }
     public void waitForPageLoad() {
+        String pageLoadStatus;
         do {
-            js = (JavascriptExecutor) driver;
-            pageLoadStatus = (String)js.executeScript("return document.readyState");
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            pageLoadStatus = (String) js.executeScript("return document.readyState");
             System.out.print(".");
         } while ( !pageLoadStatus.equals("complete") );
         System.out.println();

@@ -1,10 +1,9 @@
 package util;
 
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.log4j.Logger;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -15,28 +14,30 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
+
+import static org.apache.poi.ss.usermodel.CellType.*;
+
 
 public class ReadExcel {
 
     private static final Logger logger = Logger.getLogger(ReadExcel.class);
 
-    private String browserName,appURL,fileName,SheetName;
-     private ApplicationDetails applicationDetails;
-    public ReadExcel()
-    {
-        applicationDetails = new ApplicationDetails(browserName,appURL,fileName,SheetName);
-    }
+//    private String browserName,appURL,fileName,SheetName;
 
-    private String Filepath = System.getProperty("user.dir")+"\\testData";
-    private String fName =ApplicationDetails.getFileName();
-    private String shName =ApplicationDetails.getSheetName();
-//    private String FileName = Filepath + "\\"+ fName;
-    private String FileName = Filepath + "\\"+fName;
+//    public ReadExcel()
+//    {
+////        ApplicationDetails applicationDetails = new ApplicationDetails(browserName, appURL, fileName, SheetName);
+//    }
+
+    private final String Filepath = System.getProperty("user.dir")+"\\testData";
+    private final String fName =ApplicationDetails.getFileName();
+    private final String shName =ApplicationDetails.getSheetName();
+    private final String FileName = Filepath + "\\"+fName;
 
     public static String FromCity,ToCity,Adults,Children,Infants,ClassOfTravel,Airline;
 
-    public void readExcelFile() throws Exception {
+
+    public void readExcelFile() {
         String FileExtension;
         XSSFWorkbook workbook=null;
         Sheet worksheet;
@@ -53,9 +54,9 @@ public class ReadExcel {
 
 //            worksheet= workbook.getSheet("FlightDetails");
             worksheet= workbook.getSheet(shName);
-            int rowCount = worksheet.getLastRowNum()-worksheet.getFirstRowNum();
+               int rowCount = worksheet.getLastRowNum()-worksheet.getFirstRowNum();
             Iterator<Row> rowIterator =worksheet.rowIterator();
-            ArrayList<String> arrayList = new ArrayList<String>();
+            ArrayList<String> arrayList = new ArrayList<>();
             while (rowIterator.hasNext()) {
 
                 Row row =rowIterator.next();
@@ -63,17 +64,17 @@ public class ReadExcel {
 
                 while (cellIterator.hasNext()) {
                     Cell cell=cellIterator.next();
-                    switch ( cell.getCellType() ) {
-                        case Cell.CELL_TYPE_STRING:
+                    switch ( cell.getCellTypeEnum() ) {
+                        case STRING:
                             System.out.println(cell.getStringCellValue());
                             arrayList.add(cell.getStringCellValue());
                             break;
-                        case Cell.CELL_TYPE_NUMERIC:
+                        case NUMERIC:
                             cell.setCellValue(cell.toString().replace(".0",""));
                             System.out.println(cell.getStringCellValue());
                             arrayList.add(cell.getStringCellValue());
                             break;
-                        case Cell.CELL_TYPE_BLANK:
+                        case BLANK:
                             System.out.println(cell.getRichStringCellValue());
                             break;
                     }

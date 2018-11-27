@@ -3,13 +3,9 @@ package spring;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import org.springframework.test.context.TestPropertySource;
 import pageObject.CommonPageObject;
 import pageObject.MultiCityPageObject;
 import pageObject.One_RoundWayTripPageObject;
-import testConfiguration.ApplicationDetails;
-
-import java.beans.ConstructorProperties;
 
 @Configuration
 //@TestPropertySource(properties = { "spring.config.location = classpath:Application.yaml"})

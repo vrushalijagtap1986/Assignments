@@ -2,8 +2,6 @@ package stepDefinition;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import org.springframework.test.context.ContextConfiguration;
-import spring.UISpring;
 import testConfiguration.ApplicationDetails;
 import testConfiguration.ApplicationDriver;
 
@@ -13,7 +11,7 @@ public class Hooks {
     @Before
     public void beforeScenario() throws Exception{
         System.out.println("This will run before the Scenario");
-        ApplicationDetails.loadConfiguration();
+        ApplicationDetails.readProperties();
     }
 
     @After
