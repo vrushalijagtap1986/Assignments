@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ApplicationDriver {
 
-    public static WebDriver driver =null;
+    public static WebDriver driver;
 
     private final static String browswerpath = System.getProperty("user.dir")+"\\browseDrivers";
 
