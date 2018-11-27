@@ -32,9 +32,13 @@ public class CommonPageObject {
             switch (str)
             {
                 case "OneWayRadioButton":
+                    System.out.println("OneWayRadioButton click");
+                    actionClass.waitForPageLoad();
                     actionClass.clickRadioButton(OneWayTripRadioButton);
                     break;
                 case "RoundTripRadioButton":
+                    System.out.println("RoundTripRadioButton click");
+                    actionClass.waitForPageLoad();
                     actionClass.clickRadioButton(RoundTripRadioButton);
                     break;
                 case "SearchFlightsButton":

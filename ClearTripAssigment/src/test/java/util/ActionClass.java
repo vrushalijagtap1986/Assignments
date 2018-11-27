@@ -24,12 +24,12 @@ public class ActionClass extends ApplicationDriver {
     public void clickRadioButton(By UIElement) throws Exception
     {
         try {
-            logger.debug("click method Started");
+            logger.debug("clickRadioButton method Started");
 //           if(findBy(UIElement).isSelected())
-              System.out.println("Already clicked");
+//              System.out.println("Already clicked");
 //           else
                findBy(UIElement).click();
-            logger.debug("click method Completed");
+            logger.debug("clickRadioButton method Completed");
         }
         catch (Exception e)
         {
