@@ -43,7 +43,7 @@ public class CommonPageObject {
                     break;
                 case "SearchFlightsButton":
 //                   actionClass.waitForPageLoad();
-                    actionClass.waitForUIElementToBeDisplayed(SearchFlightsButton);
+//                    actionClass.waitForUIElementToBeDisplayed(SearchFlightsButton);
                     actionClass.click(SearchFlightsButton);
                     break;
             }

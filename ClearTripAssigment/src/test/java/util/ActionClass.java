@@ -42,7 +42,7 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("click method Started");
-            waitForUIElementToBeDisplayed(UIElement);
+//            waitForUIElementToBeDisplayed(UIElement);
             findBy(UIElement).click();
             logger.debug("click method Completed");
         }
@@ -82,7 +82,7 @@ public class ActionClass extends ApplicationDriver {
     {
         try {
             logger.debug("enterText method Started");
-            waitForUIElementToBeDisplayed(UIElement);
+//            waitForUIElementToBeDisplayed(UIElement);
 //            waitForPageLoad();
             moveToElementAndClick(UIElement);
             findBy(UIElement).clear();
@@ -100,7 +100,7 @@ public class ActionClass extends ApplicationDriver {
         try
         {
             Select select = new Select(findBy(UIElement));
-            waitForDropdownItems(UIElement);
+//            waitForDropdownItems(UIElement);
             select.selectByVisibleText(str);
         }
         catch (Exception e)
