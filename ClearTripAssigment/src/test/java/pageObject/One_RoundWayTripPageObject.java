@@ -98,7 +98,7 @@ public class One_RoundWayTripPageObject {
             logger.debug("enterOneWayTripDate started");
                     actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.click(DepartOnTextBox_OneWay_RoundTrip);
-                    actionClass.findsBy(RoundTripDatepicker).get(2).click();
+                    actionClass.findsBy(Datepicker).get(2).click();
         }
         catch (Exception e)
         {
