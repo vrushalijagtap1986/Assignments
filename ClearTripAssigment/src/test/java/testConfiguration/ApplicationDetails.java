@@ -8,21 +8,11 @@ import java.util.Properties;
 public class ApplicationDetails {
 
     private static final String FilePath = "src/main/resources/Application.properties";
-    private final String browserName;
-    private final String appURL;
-    private final String FileName;
-    private final String SheetName;
+
 //    private static String app="ClearTrip";
 //    private static Map config = null;
     File file =new File(FilePath);
     private static final Properties prop =new Properties();
-    public ApplicationDetails(String browser,String url,String fName,String sName)
-    {
-        this.browserName =browser;
-        this.appURL =url;
-        this.FileName=fName;
-        this.SheetName=sName;
-    }
 
 //    private static String getAppName()
 //    {
