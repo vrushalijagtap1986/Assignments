@@ -61,12 +61,12 @@ public class One_RoundWayTripPageObject {
                     System.out.println("FromCity:");
                     actionClass.enterText(FromTextBox_OneWay_RoundTrip,FromCity);
 //                    actionClass.selectByVisibleText(FromDropDown,FromCity);
-                    actionClass.click(FromDropDown);
+//                    actionClass.click(FromDropDown);
                     break;
                 case "To":
                     System.out.println("FromCity:");
                     actionClass.enterText(ToTextBox_OneWay_RoundTrip,ToCity);
-                    actionClass.click(ToDropDown);
+//                    actionClass.click(ToDropDown);
                     break;
                 case "Adults":
 //                    actionClass.moveToElementAndClick(AdultDropDown);
