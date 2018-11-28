@@ -17,4 +17,9 @@ class MultiCityPageObject {
 
     private static final By ClassOfTravel_MultiCity_DropDown = By.xpath("//div[@id='multiFlClass']/descendant::select");
 
+    public  MultiCityPageObject(String string)
+    {
+
+    }
+
 }

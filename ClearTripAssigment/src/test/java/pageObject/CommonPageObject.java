@@ -11,10 +11,9 @@ public class CommonPageObject {
 
     private ActionClass actionClass;
 
-    public CommonPageObject()
+    public CommonPageObject(String string)
     {
         actionClass =new ActionClass();
-        ReadExcel readExcel = new ReadExcel();
     }
 
     private static final By SearchFrame = By.xpath("//form[@id='SearchForm']");

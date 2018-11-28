@@ -13,7 +13,7 @@ public class One_RoundWayTripPageObject {
 
     private ActionClass actionClass;
     private ReadExcel readExcel;
-    public One_RoundWayTripPageObject() {
+    public One_RoundWayTripPageObject(String string) {
         actionClass = new ActionClass();
         readExcel = new ReadExcel();
     }

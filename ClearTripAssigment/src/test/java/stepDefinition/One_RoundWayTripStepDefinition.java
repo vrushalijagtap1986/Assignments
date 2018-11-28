@@ -2,13 +2,17 @@ package stepDefinition;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import pageObject.One_RoundWayTripPageObject;
 
 public class One_RoundWayTripStepDefinition {
 
 //    @Autowired
-     private One_RoundWayTripPageObject oneRoundWayTripPageObject = new One_RoundWayTripPageObject();
-
+//     private One_RoundWayTripPageObject oneRoundWayTripPageObject = new One_RoundWayTripPageObject();
+    ApplicationContext context = new ClassPathXmlApplicationContext("spring.XML");
+    One_RoundWayTripPageObject oneRoundWayTripPageObject =(One_RoundWayTripPageObject) context.getBean("OneRoundWay");
+//    TestPageObject testPageObject =(TestPageObject)context.getBean("j");
 
     @And("^I enter \"([^\"]*)\" Location$")
     public void iEnterLocation(String locationCity) throws Throwable {
