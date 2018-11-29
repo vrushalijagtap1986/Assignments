@@ -8,8 +8,6 @@ import pageObject.One_RoundWayTripPageObject;
 
 public class CommonStepDefinition {
 
-//    @Autowired
-//    private CommonPageObject commonPageObject =new CommonPageObject();
     ApplicationContext context = new ClassPathXmlApplicationContext("spring.XML");
     CommonPageObject commonPageObject =(CommonPageObject) context.getBean("CommonPage");
 

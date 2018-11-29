@@ -77,9 +77,10 @@ public class ActionClass extends ApplicationDriver {
     public void enterText(By UIElement, String str) {
         try {
             logger.debug("enterText method Started");
-//            waitForUIElementToBeDisplayed(UIElement);
-//            waitForPageLoad();
+
+            waitForPageLoad();
 //            moveToElementAndClick(UIElement);
+            waitForUIElementToBeDisplayed(UIElement);
             findBy(UIElement).clear();
             findBy(UIElement).sendKeys(str);
             logger.debug("enterText method Completed");
@@ -93,8 +94,9 @@ public class ActionClass extends ApplicationDriver {
     public void selectByVisibleText(By UIElement, String str) {
         try
         {
+            moveToElementAndClick(UIElement);
             Select select = new Select(findBy(UIElement));
-//            waitForDropdownItems(UIElement);
+            waitForDropdownItems(UIElement);
             select.selectByVisibleText(str);
         }
         catch (Exception e)

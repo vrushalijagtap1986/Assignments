@@ -69,24 +69,19 @@ public class One_RoundWayTripPageObject {
 //                    actionClass.click(ToDropDown);
                     break;
                 case "Adults":
-                    actionClass.moveToElementAndClick(AdultDropDown);
                     actionClass.selectByVisibleText(AdultDropDown,Adults);
                     break;
                 case "Children":
-                    actionClass.moveToElementAndClick(ChildernDropDown);
                     actionClass.selectByVisibleText(ChildernDropDown,Children);
                     break;
                 case "Infants":
-//                    actionClass.moveToElementAndClick(InfantDropDown);
                     actionClass.selectByVisibleText(InfantDropDown,Infants);
 //                    actionClass.waitForPageLoad();
                     break;
                 case "ClassOfTravel":
-//                    actionClass.moveToElementAndClick(ClassOfTravelDropDown);
                     actionClass.selectByVisibleText(ClassOfTravelDropDown,ClassOfTravel);
                     break;
                 case "PreferredAirline":
-//                    actionClass.moveToElementAndClick(PreferredAirlineDropDown);
                     actionClass.enterText(PreferredAirlineDropDown,Airline);
                     break;
 
@@ -99,7 +94,7 @@ public class One_RoundWayTripPageObject {
     public void enterOneWayTripDate() {
         try {
             logger.debug("enterOneWayTripDate started");
-//                    actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
+                    actionClass.waitForUIElementToBeClickable(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.click(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(Datepicker).get(2).click();
         }
@@ -114,12 +109,12 @@ public class One_RoundWayTripPageObject {
             logger.debug("enterRoundTripDate started");
             switch ( dateType ) {
                 case "DepartOn":
-//                    actionClass.waitForUIElementToBeDisplayed(DepartOnTextBox_OneWay_RoundTrip);
+                    actionClass.waitForUIElementToBeDisplayed(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.click(DepartOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(2).click();
                     break;
                 case "ReturnOn":
-//                    actionClass.waitForUIElementToBeDisplayed(ReturnOnTextBox_OneWay_RoundTrip);
+                    actionClass.waitForUIElementToBeDisplayed(ReturnOnTextBox_OneWay_RoundTrip);
                     actionClass.click(ReturnOnTextBox_OneWay_RoundTrip);
                     actionClass.findsBy(RoundTripDatepicker).get(3).click();
                     break;

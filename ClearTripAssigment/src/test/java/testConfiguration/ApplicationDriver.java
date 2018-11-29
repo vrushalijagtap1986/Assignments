@@ -57,6 +57,6 @@ public class ApplicationDriver {
 
     public static void closeDriver()
     {
-        driver.close();
+        driver.quit();
     }
 }
