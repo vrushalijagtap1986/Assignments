@@ -69,11 +69,11 @@ public class One_RoundWayTripPageObject {
 //                    actionClass.click(ToDropDown);
                     break;
                 case "Adults":
-//                    actionClass.moveToElementAndClick(AdultDropDown);
+                    actionClass.moveToElementAndClick(AdultDropDown);
                     actionClass.selectByVisibleText(AdultDropDown,Adults);
                     break;
                 case "Children":
-//                    actionClass.moveToElementAndClick(ChildernDropDown);
+                    actionClass.moveToElementAndClick(ChildernDropDown);
                     actionClass.selectByVisibleText(ChildernDropDown,Children);
                     break;
                 case "Infants":
