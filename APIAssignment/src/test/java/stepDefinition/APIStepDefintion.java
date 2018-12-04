@@ -10,6 +10,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
+import org.testng.ITestContext;
 
 @ContextConfiguration(classes = Config.class)
 public class APIStepDefintion {
@@ -28,7 +29,7 @@ public class APIStepDefintion {
 
     @And("^I call Post API$")
     public void iCallPostAPI() throws Throwable {
-       postAPI.testPostAPI();
+              postAPI.testPostAPI();
     }
 
     @Then("^I call Put API$")

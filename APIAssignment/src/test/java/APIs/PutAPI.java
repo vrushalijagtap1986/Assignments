@@ -7,11 +7,14 @@ import org.json.simple.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.stereotype.Component;
+import org.testng.ITestContext;
 
 @Component
 public class PutAPI extends ReadProperties{
+
   public PutAPI(){super();}
     public void testPutAPI() throws Exception{
+
         readProperties();
         String url = ReadProperties.baseURL;
         String queryParam = ReadProperties.getQueryParam;

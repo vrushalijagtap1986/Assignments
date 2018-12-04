@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b148c47a-0236-4633-bbfd-c75ee2b48f8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/APIs/AuthenticationAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/API.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/API.properties" afterDir="false" />
@@ -22,6 +23,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/APIAssignment$APIs_ResponseExtract_ITestContext_in_ClearTripAPIAssignment.ic" NAME="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment Coverage Results" MODIFIED="1543914504219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>APIs.ResponseExtract_ITestContext.*</FILTER>
+    </SUITE>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1493211480">
@@ -81,36 +87,42 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="17" />
           <entry key="feature" value="2" />
-          <entry key="java" value="10" />
-          <entry key="properties" value="1" />
+          <entry key="java" value="32" />
+          <entry key="properties" value="5" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="17" />
           <entry key="Cucumber" value="2" />
-          <entry key="JAVA" value="10" />
-          <entry key="Properties" value="1" />
+          <entry key="JAVA" value="32" />
+          <entry key="Properties" value="5" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="12" />
           <entry key="feature" value="113" />
-          <entry key="java" value="287" />
-          <entry key="xml" value="12" />
+          <entry key="java" value="1972" />
+          <entry key="xml" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Cucumber" value="113" />
-          <entry key="JAVA" value="287" />
-          <entry key="XML" value="12" />
+          <entry key="JAVA" value="1972" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="XML" value="16" />
         </counts>
       </usages-collector>
     </session>
@@ -118,39 +130,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/Runner.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/GetAPI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ReadProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="116">
+              <caret line="66" column="36" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -158,43 +141,75 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/API.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="16" selection-start-line="7" selection-end-line="7" selection-end-column="16" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/Config.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ReadProperties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="124">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/API.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/PostRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-680">
+              <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/PutRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/specification/RequestSenderOptions.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/RestAssured.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <caret line="156" column="39" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+              <folding>
+                <element signature="e#6176#6177#0" expanded="true" />
+                <element signature="e#6250#6251#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/APIs/PutAPI.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/specification/RequestSpecification.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="107">
+              <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -202,17 +217,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/APIs/PostAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/APIStepDefintion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="282">
+              <caret line="32" column="61" lean-forward="true" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,6 +234,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>base</find>
+      <find>json</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -247,13 +259,17 @@
         <option value="$PROJECT_DIR$/src/test/java/stepDefinition/MyStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/testRunner/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/resources/API.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/APIs/Config.java" />
-        <option value="$PROJECT_DIR$/src/test/java/stepDefinition/APIStepDefintion.java" />
         <option value="$PROJECT_DIR$/src/test/java/APIs/ReadProperties.java" />
-        <option value="$PROJECT_DIR$/src/test/java/APIs/GetAPI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/APIs/AuthenticationAPI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/stepDefinition/APIStepDefintion.java" />
         <option value="$PROJECT_DIR$/src/test/java/APIs/PostAPI.java" />
         <option value="$PROJECT_DIR$/src/test/java/APIs/PutAPI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/configuration.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/APIs/GetAPI.java" />
+        <option value="$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/PostRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/PutRequest.java" />
       </list>
     </option>
   </component>
@@ -292,8 +308,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,6 +368,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="APIs" type="462c0819:PsiDirectoryNode" />
+              <item name="ResponseExtract_ITestContext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="APIAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="APIAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="stepDefinition" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,10 +391,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543473386943" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543914662064" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -396,7 +421,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="TestNG.PutRequest.verifyPutRequest">
+    <configuration name="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ClearTripAPIAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIs.ResponseExtract_ITestContext.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIs.ResponseExtract_ITestContext" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GetAPI.testGetAPI" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="ClearTripAPIAssignment" />
       <extension name="coverage">
@@ -412,72 +451,6 @@
       <option name="METHOD_NAME" value="testGetAPI" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PostAPI.testPostAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClearTripAPIAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="APIs" />
-      <option name="MAIN_CLASS_NAME" value="APIs.PostAPI" />
-      <option name="METHOD_NAME" value="testPostAPI" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PutAPI.testPutAPI" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClearTripAPIAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="APIs" />
-      <option name="MAIN_CLASS_NAME" value="APIs.PutAPI" />
-      <option name="METHOD_NAME" value="testPutAPI" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClearTripAPIAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testRunner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testRunner" />
-      <option name="MAIN_CLASS_NAME" value="testRunner.Runner" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="api in ClearTripAPIAssignment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ClearTripAPIAssignment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="api" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -529,19 +502,89 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PostRequest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ClearTripAPIAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIs.ResponseExtract_ITestContext.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIs.ResponseExtract_ITestContext" />
+      <option name="MAIN_CLASS_NAME" value="APIs.ResponseExtract_ITestContext.PostRequest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PostRequest.verifyPostRequest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ClearTripAPIAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIs.ResponseExtract_ITestContext.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIs.ResponseExtract_ITestContext" />
+      <option name="MAIN_CLASS_NAME" value="APIs.ResponseExtract_ITestContext.PostRequest" />
+      <option name="METHOD_NAME" value="verifyPostRequest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PutRequest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ClearTripAPIAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIs.ResponseExtract_ITestContext.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIs.ResponseExtract_ITestContext" />
+      <option name="MAIN_CLASS_NAME" value="APIs.ResponseExtract_ITestContext.PutRequest" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PutRequest.verifyPutRequest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ClearTripAPIAssignment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="APIs.ResponseExtract_ITestContext.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="APIs.ResponseExtract_ITestContext" />
+      <option name="MAIN_CLASS_NAME" value="APIs.ResponseExtract_ITestContext.PutRequest" />
+      <option name="METHOD_NAME" value="verifyPutRequest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.GetAPI.testGetAPI" />
-      <item itemvalue="JUnit.PostAPI.testPostAPI" />
-      <item itemvalue="JUnit.PutAPI.testPutAPI" />
-      <item itemvalue="JUnit.api in ClearTripAPIAssignment" />
-      <item itemvalue="JUnit.Runner" />
+      <item itemvalue="TestNG.PostRequest.verifyPostRequest" />
+      <item itemvalue="TestNG.PostRequest" />
+      <item itemvalue="JUnit.APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" />
+      <item itemvalue="TestNG.PutRequest" />
+      <item itemvalue="TestNG.PutRequest.verifyPutRequest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
-        <item itemvalue="JUnit.api in ClearTripAPIAssignment" />
-        <item itemvalue="JUnit.PutAPI.testPutAPI" />
-        <item itemvalue="JUnit.PostAPI.testPostAPI" />
+        <item itemvalue="TestNG.PutRequest.verifyPutRequest" />
+        <item itemvalue="TestNG.PutRequest" />
+        <item itemvalue="TestNG.PostRequest" />
+        <item itemvalue="JUnit.APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" />
+        <item itemvalue="TestNG.PostRequest.verifyPostRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -559,42 +602,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PostAPI_testPostAPI - 2018.11.23 at 12h 37m 05s.xml">
-      <configuration name="PostAPI.testPostAPI" configurationId="JUnit" />
+    <history-entry file="PostRequest - 2018.12.04 at 14h 27m 48s.xml">
+      <configuration name="PostRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PutAPI_testPutAPI - 2018.11.23 at 12h 37m 15s.xml">
-      <configuration name="PutAPI.testPutAPI" configurationId="JUnit" />
+    <history-entry file="PostRequest_verifyPostRequest - 2018.12.04 at 14h 28m 10s.xml">
+      <configuration name="PostRequest.verifyPostRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="api_in_ClearTripAPIAssignment - 2018.11.23 at 12h 38m 19s.xml">
-      <configuration name="api in ClearTripAPIAssignment" configurationId="JUnit" />
+    <history-entry file="PostRequest - 2018.12.04 at 14h 28m 52s.xml">
+      <configuration name="PostRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 10h 54m 52s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="APIs_ResponseExtract_ITestContext_in_ClearTripAPIAssignment - 2018.12.04 at 14h 33m 58s.xml">
+      <configuration name="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 10h 56m 04s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="APIs_ResponseExtract_ITestContext_in_ClearTripAPIAssignment - 2018.12.04 at 14h 35m 46s.xml">
+      <configuration name="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 11h 14m 48s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="APIs_ResponseExtract_ITestContext_in_ClearTripAPIAssignment - 2018.12.04 at 14h 36m 00s.xml">
+      <configuration name="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 11h 15m 09s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="APIs_ResponseExtract_ITestContext_in_ClearTripAPIAssignment - 2018.12.04 at 14h 36m 19s.xml">
+      <configuration name="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 11h 19m 54s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="APIs_ResponseExtract_ITestContext_in_ClearTripAPIAssignment - 2018.12.04 at 14h 36m 43s.xml">
+      <configuration name="APIs.ResponseExtract_ITestContext in ClearTripAPIAssignment" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 11h 20m 44s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="PostRequest - 2018.12.04 at 14h 36m 51s.xml">
+      <configuration name="PostRequest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Runner - 2018.11.29 at 11h 32m 16s.xml">
-      <configuration name="Runner" configurationId="JUnit" />
+    <history-entry file="PutRequest - 2018.12.04 at 14h 36m 57s.xml">
+      <configuration name="PutRequest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -603,7 +645,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30605564" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -645,20 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/RestAssured.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/specification/RequestSenderOptions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/internal/RequestSpecificationImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -670,32 +698,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/MyStepdefs.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/APIStepDefinition.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/MyStepdefs.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/API.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/GetAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -711,51 +717,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/PutAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/PostAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stepDefinition/APIStepDefintion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="34">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Feature/API.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/PutAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="255">
+          <caret line="29" column="52" lean-forward="true" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/testRunner/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/AuthenticationAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/ITestContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/AfterClass.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/AfterClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Attributes.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#650#651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="758" selection-start-line="758" selection-end-line="758" />
+          <folding>
+            <element signature="e#29970#29971#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/API.properties">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/PostAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="32" column="61" lean-forward="true" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/GetAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="66" column="36" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/RestAssured.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="156" column="39" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
+          <folding>
+            <element signature="e#6176#6177#0" expanded="true" />
+            <element signature="e#6250#6251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/specification/RequestSenderOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/3.0.0/rest-assured-3.0.0.jar!/io/restassured/specification/RequestSpecification.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/IAttributes.class">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="16" selection-start-line="7" selection-end-line="7" selection-end-column="16" />
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/PostRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ReadProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="124">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APIs/ResponseExtract_ITestContext/PutRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

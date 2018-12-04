@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.put;
 
 @Component
 public class GetAPI extends ReadProperties{
@@ -30,6 +31,7 @@ public class GetAPI extends ReadProperties{
 //        int code = get("https://reqres.in/api/users/2").getStatusCode();
 //                System.out.println("Actual Status code :"+code);
         Response response = request.get(queryParam);
+
 
         int code =response.getStatusCode();
         System.out.println("Actual code :"+code);
